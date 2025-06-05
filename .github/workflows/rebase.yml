@@ -3,7 +3,7 @@ name: rebase
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron:  '*/30 * * * *'
 
 concurrency:
   group: ${{ github.workflow }}
@@ -52,3 +52,4 @@ jobs:
           upstream: https://aur.archlinux.org/kernel-install-mkinitcpio.git
           dispatch-target: ${{ vars.PACKAGES_REPO }}
           dispatch-token: ${{ secrets.DISPATCH_TOKEN }}
+      
