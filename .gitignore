@@ -1,0 +1,7 @@
+*
+!static/
+!static/*
+!PKGBUILD
+!SRCINFO
+!.github
+!.github/**/*
